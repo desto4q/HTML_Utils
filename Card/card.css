@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  height: 100dvh;
+  font-family: "montserrat";
+}
+
+.card_container {
+  width: 100%;
+  height: auto;
+}
+.card_container .content {
+  height: 100%;
+  width: 100vw;
+  padding: 4px 12px;
+  gap: 12px;
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+.card_container .content .card {
+  border-radius: 4px;
+  outline: 1px solid white;
+  flex-shrink: 0;
+  width: 252px;
+  height: 300px;
+  position: relative;
+  float: left;
+  margin-left: 12px;
+}
+.card_container .content .card .card_content {
+  transition: 0.4s ease;
+  border-radius: 4px;
+  padding: 4px;
+  width: 100%;
+  height: 100%;
+  gap: 4px;
+  display: flex;
+  flex-direction: column;
+}
+.card_container .content .card .card_content h2 {
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.card_container .content .card .card_content img {
+  width: 100%;
+  height: 65%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  border-radius: 4px;
+}
+.card_container .content .card .card_content .price {
+  font-weight: 600;
+}
+.card_container .content .card .card_content .card_info {
+  margin-top: auto;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 4px 12px;
+  border-radius: 8px;
+}
+.card_container .content .card .card_content .card_info .colors {
+  font-weight: 600;
+  color: grey;
+  font-size: 14px;
+}
+.card_container .content .card .card_content .purchase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card_container .content .card .card_content .purchase button {
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  padding: 8px;
+  color: white;
+  background-color: mediumpurple;
+  font-size: 12px;
+  border-radius: 4px;
+}
+.card_container .content .card:hover {
+  width: 400px;
+}
+.card_container .content .card:hover .card_content {
+  width: 100%;
+  position: absolute;
+  height: 150%;
+}
+.card_container .content .card:hover .card_content .card_info {
+  background-color: #ebebeb;
+}
+.card_container .content .card:hover .card_content .card_info h2 {
+  font-size: 22px;
+}
+.card_container .content .card:hover .card_content .card_info .colors {
+  font-size: 16px;
+}
+.card_container .content .card:hover .card_content .card_info button {
+  font-size: 16px;
+}
+.card_container .content .card:hover .card_content .card_info .price {
+  font-size: 16px;
+}/*# sourceMappingURL=card.css.map */

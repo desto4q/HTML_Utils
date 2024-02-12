@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    height: 100dvh;
+    font-family: "montserrat";
+}
+
+.card_container {
+    width: 100%;
+    height: auto;
+
+
+    .content {
+
+        height: 100%;
+        width: 100vw;
+        // display: flex;
+        padding: 4px 12px;
+        gap: 12px;
+        align-items: center;
+        // background-color: red;
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+
+        .card {
+            border-radius: 4px;
+            outline: 1px solid white;
+            flex-shrink: 0;
+            width: 252px;
+            height: 300px;
+            position: relative;
+            float: left;
+            margin-left: 12px;
+
+
+            .card_content {
+                transition: 0.4s ease;
+                border-radius: 4px;
+                padding: 4px;
+                width: 100%;
+                height: 100%;
+                // background: blue;
+                gap: 4px;
+                display: flex;
+                flex-direction: column;
+
+                h2 {
+                    font-size: 16px;
+                    text-transform: capitalize;
+                }
+
+                img {
+                    width: 100%;
+                    height: 65%;
+                    object-fit: scale-down;
+                    border-radius: 4px;
+
+                }
+
+                .price {
+                    font-weight: 600;
+                }
+
+                .card_info {
+                    margin-top: auto;
+                    height: 30%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    padding: 4px 12px;
+                    border-radius: 8px;
+
+                    .colors {
+                        font-weight: 600;
+                        color: grey;
+                        font-size: 14px;
+                    }
+
+                }
+
+                .purchase {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    button {
+                        text-transform: capitalize;
+                        outline: none;
+                        border: none;
+                        padding: 8px;
+                        color: white;
+                        background-color: mediumpurple;
+                        font-size: 12px;
+                        border-radius: 4px;
+                    }
+                }
+
+            }
+
+
+        }
+
+        .card:hover {
+            width: 400px;
+
+            .card_content {
+
+             
+                width: 100%;
+                position: absolute;
+                height: 150%;
+
+                .card_info {
+                    h2 {
+                        font-size: 22px;
+                    }
+
+                    .colors {
+                        font-size: 16px;
+                    }
+
+                    button {
+                        font-size: 16px;
+                    }
+
+                    .price {
+                        font-size: 16px;
+                    }
+
+                    background-color: rgba($color: #ebebeb, $alpha: 1.0);
+
+                }
+            }
+        }
+    }
+}
