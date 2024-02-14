@@ -1,0 +1,21 @@
+{
+	"links": ["Home", "Features", "Testimonies", "Pricing", "download"],
+	"sponsors": [
+		{
+			"name": "Sony",
+			"link": "https://www.logo.wine/a/logo/Sony/Sony-Logo.wine.svg"
+		},
+		{
+			"name": "Spotify",
+			"link": "https://www.logo.wine/a/logo/Spotify/Spotify-Black-Logo.wine.svg"
+		},
+		{
+			"name": "canon",
+			"link": "https://www.logo.wine/a/logo/Canon_Inc./Canon_Inc.-Logo.wine.svg"
+		},
+		{
+			"name": "walmart",
+			"link": "https://www.logo.wine/a/logo/Walmart/Walmart-Logo.wine.svg"
+		}
+	]
+}
