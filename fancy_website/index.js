@@ -22,8 +22,8 @@ for (let tag of a_tags) {
 for (let spons of data.sponsors) {
     let icon = document.createElement("img")
     icon.classList.add("icon")
-    icon.src= spons.link
-    
+    icon.src = spons.link
+
     sponsorbox.appendChild(icon)
 
 } 
